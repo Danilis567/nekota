@@ -11,16 +11,15 @@ const gridStyle = {
   backgroundSize: '80px 80px',
 };
 
+// ▼▼▼ DEĞİŞİKLİK 1: Sosyal medya linkleri güncellendi ▼▼▼
 const socialLinks = [
-  { name: 'Patreon', icon: FaPatreon, href: '#', color: '#FF424D' },
-  { name: 'Discord', icon: FaDiscord, href: '#', color: '#5865F2' },
-  { name: 'Instagram', icon: FaInstagram, href: '#', color: '#E4405F' },
-  { name: 'X (Twitter)', icon: FaXTwitter, href: '#', color: '#FFFFFF' },
-  { name: 'TikTok', icon: FaTiktok, href: '#', color: '#00F2EA' },
-  { name: 'Reddit', icon: FaReddit, href: '#', color: '#FF4500' },
+  { name: 'Patreon', icon: FaPatreon, href: 'https://www.patreon.com/nekota', color: '#FF424D' },
+  { name: 'Discord', icon: FaDiscord, href: 'https://discord.gg/nekota', color: '#5865F2' },
+  { name: 'X (Twitter)', icon: FaXTwitter, href: 'https://x.com/nekotaapptr', color: '#FFFFFF' },
+  { name: 'Reddit', icon: FaReddit, href: 'https://www.reddit.com/r/nekota/', color: '#FF4500' },
 ];
+// ▲▲▲ DEĞİŞİKLİK BİTTİ ▲▲▲
 
-// İkonların yörünge konumları büyüyen alana göre ayarlandı
 const iconPositions = [
   'top-0 left-1/2 -translate-x-1/2',
   'top-1/4 right-0',
@@ -30,23 +29,25 @@ const iconPositions = [
   'top-1/4 left-0',
 ];
 
+import { useTranslation } from 'react-i18next';
+
 export default function CommunityPage() {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#111111] text-white font-['Poppins']">
       <section className="relative py-24 sm:py-32" style={gridStyle}>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Topluluğumuz
+              {t('community.hero.title')}
             </h1>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              Sanatçılarla ve diğer okurlarla bağ kurun, tartışmalara katılın ve Nekota evreninin bir parçası olun.
+              {t('community.hero.description')}
             </p>
           </div>
         </div>
       </section>
 
-      {/* 👇 DEĞİŞİKLİK: Bölümün tamamı yeni tasarıma göre yeniden yapılandırıldı */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-20 gap-y-16 px-6 lg:grid-cols-2 lg:px-8">
           
@@ -75,19 +76,25 @@ export default function CommunityPage() {
           {/* Sağ Sütun: Metin ve Buton */}
           <div className="flex flex-col items-start justify-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Topluluğun Kalbine Katıl
+              {t('community.details.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              Tartışmalara katılın, favori sanatçılarınızla doğrudan sohbet edin, özel içeriklere ilk siz ulaşın ve Nekota'nın geleceğini şekillendiren kararlarda söz sahibi olun. Burası sadece bir platform değil, ortak bir tutkuyu paylaştığımız bir aile.
+              {t('community.details.description')}
             </p>
-            <button className="mt-8 rounded-full border-2 border-[#FFA800] px-8 py-3 font-bold uppercase text-[#FFA800] transition-colors duration-300 hover:bg-[#FFA800] hover:text-black">
-              Discord Sunucumuza Katıl
-            </button>
+            {/* ▼▼▼ DEĞİŞİKLİK 2: Buton, linke dönüştürüldü ▼▼▼ */}
+            <a 
+              href="https://discord.gg/nekota"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block rounded-full border-2 border-[#FFA800] px-8 py-3 font-bold uppercase text-[#FFA800] transition-colors duration-300 hover:bg-[#FFA800] hover:text-black"
+            >
+              {t('community.details.button')}
+            </a>
+            {/* ▲▲▲ DEĞİŞİKLİK BİTTİ ▲▲▲ */}
           </div>
           
         </div>
       </section>
-      {/* 👆 DEĞİŞİKLİK BİTTİ */}
     </div>
   );
-}
+}

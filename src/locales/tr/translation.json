@@ -1,0 +1,350 @@
+{
+  "navbar": {
+    "what_is_nekota": "Nekota Nedir?",
+    "dropdown": {
+      "who_are_we": "Biz Kimiz?",
+      "mission_vision": "Misyon ve Vizyon",
+      "roadmap": "Yol Haritası"
+    },
+    "blog": "Blog",
+    "discover": "Keşfet",
+    "contents": "İçerikler",
+    "home": "Ana Sayfa",
+    "contact_us": "Bizimle İletişime Geçin"
+  },
+  "landing": {
+    "hero": {
+      "title_start": "Türkiye'nin",
+      "title_highlight": "Bağımsız Sanatçıları",
+      "title_end": "için Dijital Kapınız.",
+      "description": "Türkiye'nin bağımsız sanatçılarını destekleyen, onların eserlerini okurlarla buluşturan yeni nesil bir mobil platform geliştiriyoruz. İlk haberdar olanlardan olmak için e-posta listemize katılın.",
+      "email_placeholder": "E-posta adresiniz...",
+      "button": "HABERDAR OL"
+    },
+    "features": {
+      "subtitle": "Nekota Ne Sunar?",
+      "description": "Biz, sadece bir uygulama değil; sanatın ve teknolojinin buluştuğu, topluluğun gücüyle büyüyen bir ekosistem inşa ediyoruz.",
+      "items": {
+        "support": {
+          "title": "Bağımsız Sanatçı Desteği",
+          "description": "Yerel yeteneklerin emeklerini koruyan, telif haklarını güvence altına alan ve eserlerini geniş bir kitleyle buluşturan bir platform."
+        },
+        "revenue": {
+          "title": "Adil Gelir Modeli",
+          "description": "Sanatçıların eserlerinden elde edilen gelirlerden şeffaf ve hakkaniyetli bir pay almasını sağlayan, sürdürülebilir bir kazanç sistemi."
+        },
+        "reading": {
+          "title": "Sürükleyici Okuma Deneyimi",
+          "description": "Hikayeye odaklanmanızı sağlayan reklamsız abonelik seçenekleri ve okuma alışkanlıklarınıza göre çalışan akıllı bir öneri motoru."
+        },
+        "community": {
+          "title": "Canlı ve Etkileşimli Topluluk",
+          "description": "Yorumlar, forumlar ve Discord sunucumuz üzerinden diğer okurlarla ve sanatçılarla doğrudan iletişim kurabileceğiniz bir ekosistem."
+        },
+        "library": {
+          "title": "Geniş İçerik Kütüphanesi",
+          "description": "Hem yerli bağımsız çizgi roman ve webtoon'lar hem de telifsiz, unutulmaz klasik manga ve animelerden oluşan zengin bir içerik arşivi."
+        },
+        "user_centric": {
+          "title": "Kullanıcı Odaklı Gelişim",
+          "description": "Sürekli geri bildirimlerle büyüyen, ihtiyaçlarınıza göre şekillenen ve topluluğun söz sahibi olduğu şeffaf bir geliştirme süreci."
+        }
+      }
+    },
+    "ecosystem": {
+      "title": "Birlikte Bir Ekosistem İnşa Ediyoruz.",
+      "description": "Türkiye'de yetenekli bağımsız çizgi roman ve webtoon sanatçılarının hak ettikleri değeri görmediğini gördük. Bu soruna bir çözüm sunan, sanatçıları merkeze alan yeni nesil bir dijital yayıncılık platformu olarak Nekota'yı kurduk. Amacımız, sanatçıların emeklerinin karşılığını alabildiği ve okurların da yeni dünyalar keşfettiği sürdürülebilir bir ekosistem yaratmaktır.",
+      "button": "Topluluğa Katıl"
+    },
+    "news": {
+      "title": "Nekota Evreninden Haberler",
+      "description": "En son gelişmeler, iş birlikleri ve topluluk duyurularımız. Bu blogda, bir projenin doğuşuna dair tüm hikayelere ulaşabilirsiniz.",
+      "button": "TÜM BLOGA GİT",
+      "read_post": "Gönderiyi Oku",
+      "category_general": "GENEL"
+    },
+    "cta": {
+      "title": "Nekota'ya Katıl!",
+      "description": "Uygulamamızın lansmanından, sanatçı duyurularına ve yeni içeriklere dair tüm gelişmelerden haberdar olmak için e-posta listemize katılın.",
+      "email_placeholder": "E-posta adresinizi girin",
+      "button": "KATIL"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Biz Kimiz?",
+      "description": "Bizler yeni nesil bir yayıncı, bağımsız sanatın gücüne inanan tutkulu bir grup geliştirici, tasarımcı ve hikaye anlatıcısıyız. Her zaman görmek istediğimiz platformu yaratmak için bir araya geldik: Türkiye'nin sanatçılarının gelişebileceği ve okurların eşsiz dünyalar keşfedebileceği bir alan."
+    },
+    "details": {
+      "subtitle": "NEKOTA",
+      "title": "Sanatçılar İçin, Sanatçılar Tarafından Kuruldu.",
+      "description": "Türkiye'de yetenekli bağımsız çizgi roman ve webtoon sanatçılarının hak ettikleri değeri görmediğini fark ettik. Bu soruna bir çözüm sunan, sanatçıları merkeze alan yeni nesil bir dijital yayıncılık platformu olarak Nekota'yı kurduk.\n\nAmacımız, sanatçıların emeklerinin karşılığını alabildiği, telif haklarının korunduğu ve okurların da yeni dünyalar keşfettiği sürdürülebilir bir ekosistem yaratmaktır. Her çizginin, her hikayenin bir değeri olduğuna inanıyoruz ve bu değeri hak ettiği kitleyle buluşturmak için çalışıyoruz."
+    }
+  },
+  "mission": {
+    "hero": {
+      "title": "Misyon ve Vizyon",
+      "description": "Sanatı ve sanatçıyı merkeze alan, teknolojiyle güçlendirilmiş, adil ve sürdürülebilir bir dijital yayıncılık ekosistemi yaratma hedefiyle yola çıktık."
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Temel misyonumuz, Türkiye'deki bağımsız sanatçıları ve hikaye anlatıcılarını güçlendirmektir. Onlara, eserlerini adil bir gelir modeliyle geniş kitlelere ulaştırabilecekleri, telif haklarını koruyabilecekleri ve yaratıcı özgürlüklerini sonuna kadar kullanabilecekleri modern bir platform sunmayı amaçlıyoruz. Okurlar için ise, yerel yeteneklerin ürettiği zengin ve çeşitli içeriklere kolayca erişebilecekleri, canlı bir topluluğun parçası olabilecekleri bir alan yaratmayı hedefliyoruz."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Vizyonumuz, Nekota'yı Türkiye'nin bağımsız dijital çizgi roman ve webtoon sahnesinin kalbi haline getirmektir. Sadece bir okuma platformu değil, aynı zamanda sanatçıların ve okurların bir araya geldiği, etkileşimde bulunduğu ve birlikte büyüdüğü bir kültür merkezi olmayı hayal ediyoruz. Uzun vadede, Türkiye'den çıkan özgün hikayeleri ve sanatçıları uluslararası arenada temsil eden, tanınan ve saygı duyulan bir marka olmayı hedefliyoruz."
+    }
+  },
+  "roadmap": {
+    "hero": {
+      "title": "Yol Haritası",
+      "description": "Nekota'yı şeffaf ve topluluk odaklı bir süreçle geliştiriyoruz. İşte gelecekte bizi nelerin beklediğine dair genel bir bakış."
+    },
+    "phases": [
+      {
+        "phase": "1. Aşama: Beta Testleri ve Yayınlanma (2026 3. Çeyrek)",
+        "title": "Beta Süreci ve Resmi Lansman",
+        "description": "Uygulamanın beta testlerinin başlaması ve 3. çeyrek sonlanmadan uygulamanın resmi olarak yayınlanması."
+      },
+      {
+        "phase": "2. Aşama: iOS ve macOS Çıkışı (2026 4. Çeyrek)",
+        "title": "Apple Ekosistemi Genişlemesi",
+        "description": "iOS ve macOS sürümlerinin kullanıcılarla buluşması ve platformun tüm Apple cihazlarında erişilebilir hale gelmesi."
+      },
+      {
+        "phase": "3. Aşama: Şirketleşme ve Büyüme (2027 2. Çeyrek)",
+        "title": "Kurumsallaşma ve 100.000 Kullanıcı",
+        "description": "Şirketleşme sürecinin tamamlanması, gelir dağılımı sisteminin daha hızlı ve verimli hale getirilmesi ve 100.000 aktif kullanıcı hedefine ulaşılması."
+      },
+      {
+        "phase": "4. Aşama: Çeviri ve Dublaj Desteği",
+        "title": "Lokalizasyon Fonu",
+        "description": "Türk çeviri ve dublaj ekiplerini desteklemek amacıyla özel bir fon yaratılması ve içeriklerin kalitesinin artırılması."
+      },
+      {
+        "phase": "5. Aşama: Orijinal İçerik ve Stüdyo Desteği (2028 1. Çeyrek)",
+        "title": "Nekota Originals ve Amatör Stüdyolar",
+        "description": "Nekota orijinal içerikleri için amatör stüdyoları maddi ve ekipman olarak desteklemek, fonlamak veya çalışan olarak bünyemize katmak; küçük stüdyoların üretimini destekleyip telif haklarını korumak."
+      },
+      {
+        "phase": "6. Aşama: Bölgesel Genişleme (2028 Son Çeyrek - 2029 İlk Çeyrek)",
+        "title": "Yakın Coğrafya Operasyonları",
+        "description": "Kıbrıs ve Azerbaycan başta olmak üzere yakın coğrafya ülkelerine açılımın gerçekleştirilmesi."
+      },
+      {
+        "phase": "7. Aşama: Küresel Pazara Giriş (2030 ve Sonrası)",
+        "title": "Global Vizyon",
+        "description": "Avrupa ve Kuzey Amerika pazarlarına açılarak platformun küresel ölçekte bir marka haline gelmesi."
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "description": "Nekota evreninden en son haberler, sanatçı röportajları, teknik makaleler ve topluluk hikayeleri."
+    },
+    "search_placeholder": "Blogda ara...",
+    "all_categories": "Tüm Kategoriler",
+    "author": "Yazar",
+    "post_not_found": "Yazı bulunamadı.",
+    "categories": {
+      "all": "Tümü",
+      "announcement": "DUYURU",
+      "artist": "SANATÇI",
+      "technology": "TEKNOLOJİ",
+      "community": "TOPLULUK",
+      "culture": "KÜLTÜR",
+      "development": "GELİŞİM"
+    },
+    "card": {
+      "category_general": "GENEL",
+      "author": "Yazar"
+    },
+    "no_posts": "Aradığınız kriterlere uygun yazı bulunamadı."
+  },
+  "community": {
+    "hero": {
+      "title": "Topluluğumuz",
+      "description": "Sanatçılarla ve diğer okurlarla bağ kurun, tartışmalara katılın ve Nekota evreninin bir parçası olun."
+    },
+    "details": {
+      "title": "Topluluğun Kalbine Katıl",
+      "description": "Tartışmalara katılın, favori sanatçılarınızla doğrudan sohbet edin, özel içeriklere ilk siz ulaşın ve Nekota'nın geleceğini şekillendiren kararlarda söz sahibi olun. Burası sadece bir platform değil, ortak bir tutkuyu paylaştığımız bir aile.",
+      "button": "Discord Sunucumuza Katıl"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişime Geçin",
+      "description": "Bir sorunuz mu var, bir fikriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Sizden haber almayı çok isteriz."
+    },
+    "info": {
+      "general": {
+        "title": "Genel Sorular",
+        "description": "Platform, abonelikler veya genel konular hakkındaki tüm sorularınız için."
+      },
+      "partnership": {
+        "title": "İş Ortaklıkları",
+        "description": "Yayıncılar, markalar ve potansiyel partnerler için iş birliği fırsatları."
+      },
+      "media": {
+        "title": "Basın ve Medya",
+        "description": "Röportaj talepleri, basın bültenleri ve medya ile ilgili tüm iletişimler için."
+      }
+    },
+    "form": {
+      "title": "Bize Yazın",
+      "subtitle": "Sizden haber almak için sabırsızlanıyoruz.",
+      "name_label": "Adınız",
+      "email_label": "E-posta Adresiniz",
+      "message_label": "Mesajınız",
+      "button_send": "Mesajı Gönder",
+      "button_sending": "Gönderiliyor...",
+      "success_message": "Mesajınız başarıyla gönderildi! En kısa sürede size döneceğiz.",
+      "error_message": "Mesajınız gönderilemedi. Lütfen tekrar deneyin."
+    },
+    "community_card": {
+      "title": "Topluluğa Katıl",
+      "description": "Discord sunucumuzda 5.000+ sanatçı seni bekliyor."
+    }
+  },
+  "legal": {
+    "hero": {
+      "title": "Şartlar ve Koşullar",
+      "description": "Nekota platformunda bir sanatçı veya kullanıcı olmanın getirdiği haklar, sorumluluklar ve politikalar hakkında tüm detaylar."
+    },
+    "main_title": "Nekota İçerik Üreticisi ve Kullanıcı Anlaşması",
+    "main_description": "Bu belge, Nekota platformunun kullanımıyla ilgili tüm taraflar (Sanatçılar, Kullanıcılar, İş Ortakları) için geçerli olan genel kuralları, politikaları ve yasal yükümlülükleri içerir.",
+    "search": {
+      "results_for": "\"{{query}}\" için {{count}} sonuç bulundu:",
+      "no_results": "\"{{query}}\" için hiç sonuç bulunamadı.",
+      "placeholder": "Dokümanlarda ara..."
+    },
+    "menu": {
+      "artist": {
+        "main": "Sanatçılar için",
+        "general_terms": "Genel Şartlar",
+        "revenue_models": "Gelir Modelleri",
+        "legal_procedures": "Yasal Prosedürler",
+        "items": {
+          "parties": "Taraflar ve Konu",
+          "licensing": "Lisanslama ve Süre",
+          "intellectual_property": "Fikri Mülkiyet",
+          "responsibilities": "Tarafların Sorumlulukları",
+          "termination": "Fesih ve Gizlilik",
+          "basic_revenue": "Temel Gelirler",
+          "youtube": "YouTube Promosyonu",
+          "tiered_subscription": "Katmanlı Abonelik Modeli",
+          "crowdfunding": "Kitle Fonlaması Modeli",
+          "force_majeure": "Mücbir Sebepler",
+          "dispute_resolution": "Uyuşmazlıkların Çözümü",
+          "entire_agreement": "Anlaşmanın Bütünlüğü"
+        }
+      },
+      "user": {
+        "main": "Kullanıcılar için",
+        "subscription_payments": "Abonelik ve Ödemeler",
+        "special_privileges": "Özel Ayrıcalıklar",
+        "items": {
+          "packages": "Platform Abonelik Paketleri",
+          "billing": "Ödeme ve Faturalandırma",
+          "cancellation": "İptal ve İade Politikası",
+          "patreon": "Patreon Ayrıcalıkları"
+        }
+      },
+      "guides": {
+        "main": "Platform Rehberleri",
+        "account_management": "Hesap Yönetimi",
+        "content_management": "Sanatçılar için İçerik Yönetimi",
+        "reading_experience": "Okurlar için Okuma Deneyimi",
+        "items": {
+          "profile": "Profil Oluşturma ve Düzenleme",
+          "notifications": "Bildirim Ayarları",
+          "security": "Güvenlik ve Şifre İşlemleri",
+          "upload": "Eser Yükleme Standartları",
+          "scheduling": "Bölümleme ve Zamanlama",
+          "artist_panel": "Sanatçı Paneli Kullanımı",
+          "library": "Kütüphane Nasıl Kullanılır?",
+          "offline": "Çevrimdışı Okuma Özelliği",
+          "discovery": "İçerik Keşfetme ve Filtreleme"
+        }
+      },
+      "community": {
+        "main": "Topluluk ve Etkileşim Kuralları",
+        "etiquette": "Yorum ve Tartışma Adabı",
+        "moderation": "Moderasyon Süreci",
+        "discord_forum": "Discord ve Forum Kuralları",
+        "items": {
+          "criticism": "Yapıcı Eleştiri Nasıl Yapılır?",
+          "spoiler": "Spoiler Politikası",
+          "reporting": "İçerik Nasıl Rapor Edilir?",
+          "appeals": "İtiraz ve Değerlendirme Süreçleri",
+          "channels": "Kanal Kullanım Amaçları",
+          "events": "Etkinlik ve Yarışma Katılım Şartları"
+        }
+      },
+      "technical": {
+        "main": "Teknik Detaylar",
+        "technologies": "Kullandığımız Teknolojiler",
+        "feedback": "Geri Bildirim ve Hata Raporlama",
+        "open_source": "Açık Kaynak Katkıları",
+        "items": {
+          "flutter_firebase": "Neden Flutter ve Firebase?",
+          "infrastructure": "Altyapımızın Güvenliği",
+          "feature_request": "Yeni Özellik Talebi Nasıl Yapılır?",
+          "bug_reporting": "Hata (Bug) Bildirme Süreci",
+          "contributing": "Projeye Nasıl Katkıda Bulunabilirsiniz?",
+          "contributors": "Katkıda Bulunanlar Listesi"
+        }
+      },
+      "partnership": {
+        "main": "İş Ortaklıkları ve Basın",
+        "models": "İş Birliği Modelleri",
+        "press_kit": "Basın Kiti",
+        "advertising": "Reklam Seçenekleri",
+        "items": {
+          "opportunities": "Yayıncılar ve Markalar için Fırsatlar",
+          "materials": "Logolar ve Görsel Materyaller",
+          "about_press": "Hakkımızda Yazısı ve İletişim",
+          "how_to_advertise": "Platformda Nasıl Reklam Verilir?"
+        }
+      }
+    }
+  },
+  "footer": {
+    "subscription_text": "Gelişmelerden haberdar olmak için bültenimize abone olun.",
+    "email_placeholder": "E-posta adresiniz...",
+    "subscribe_button": "Gönder",
+    "loading_button": "...",
+    "message_empty_email": "Lütfen bir e-posta adresi girin.",
+    "message_success": "Başarıyla abone oldunuz! Gelişmeler için takipte kalın.",
+    "columns": {
+      "about": {
+        "title": "Hakkımızda",
+        "links": {
+          "who_are_we": "Biz Kimiz?",
+          "mission_vision": "Misyon ve Vizyon",
+          "roadmap": "Yol Haritası",
+          "contact": "İletişim"
+        }
+      },
+      "contact": {
+        "title": "İletişim"
+      },
+      "community": {
+        "title": "Topluluk",
+        "links": {
+          "patreon": "Patreon",
+          "x_twitter": "X (Twitter)",
+          "discord": "Discord",
+          "reddit": "Reddit"
+        }
+      }
+    }
+  },
+  "contents": {
+    "title": "İçerikler",
+    "description": "Nekota platformunda geliştirilen tüm projelerin detaylı özetlerine ve planlama aşamalarına buradan ulaşabilirsiniz.",
+    "review_button": "İncele"
+  }
+}

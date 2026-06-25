@@ -1,6 +1,7 @@
 // src/pages/MissionPage.jsx
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const gridStyle = {
   backgroundImage:
@@ -9,6 +10,7 @@ const gridStyle = {
 };
 
 export default function MissionPage() {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#111111] text-white font-['Poppins']">
       {/* HERO */}
@@ -16,10 +18,10 @@ export default function MissionPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Misyon ve Vizyon
+              {t('mission.hero.title')}
             </h1>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              Sanatı ve sanatçıyı merkeze alan, teknolojiyle güçlendirilmiş, adil ve sürdürülebilir bir dijital yayıncılık ekosistemi yaratma hedefiyle yola çıktık.
+              {t('mission.hero.description')}
             </p>
           </div>
         </div>
@@ -32,20 +34,20 @@ export default function MissionPage() {
           {/* Misyon */}
           <div className="flex flex-col items-start">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Misyonumuz
+              {t('mission.mission.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              Temel misyonumuz, Türkiye'deki bağımsız sanatçıları ve hikaye anlatıcılarını güçlendirmektir. Onlara, eserlerini adil bir gelir modeliyle geniş kitlelere ulaştırabilecekleri, telif haklarını koruyabilecekleri ve yaratıcı özgürlüklerini sonuna kadar kullanabilecekleri modern bir platform sunmayı amaçlıyoruz. Okurlar için ise, yerel yeteneklerin ürettiği zengin ve çeşitli içeriklere kolayca erişebilecekleri, canlı bir topluluğun parçası olabilecekleri bir alan yaratmayı hedefliyoruz.
+              {t('mission.mission.description')}
             </p>
           </div>
 
           {/* Vizyon */}
           <div className="flex flex-col items-start">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Vizyonumuz
+              {t('mission.vision.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-white/70">
-              Vizyonumuz, Nekota'yı Türkiye'nin bağımsız dijital çizgi roman ve webtoon sahnesinin kalbi haline getirmektir. Sadece bir okuma platformu değil, aynı zamanda sanatçıların ve okurların bir araya geldiği, etkileşimde bulunduğu ve birlikte büyüdüğü bir kültür merkezi olmayı hayal ediyoruz. Uzun vadede, Türkiye'den çıkan özgün hikayeleri ve sanatçıları uluslararası arenada temsil eden, tanınan ve saygı duyulan bir marka olmayı hedefliyoruz.
+              {t('mission.vision.description')}
             </p>
           </div>
 

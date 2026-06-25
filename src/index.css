@@ -46,3 +46,8 @@ body {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+
+.btn_cursor_pointer {
+  cursor: pointer;
+}

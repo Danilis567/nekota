@@ -13,7 +13,11 @@ import BlogPage from './pages/BlogPage';
 import CommunityPage from './pages/CommunityPage';
 import LegalPage from './pages/LegalPage'; // Yeni LegalPage'i import et
 import { useState } from 'react';
-import ContactPage from './pages/ContantPage';
+import ContactPage from './pages/ContactPage';
+import BlogPostPage from './pages/BlogPostPage';
+import ContentsPage from './pages/ContentsPage';
+import ContentDetailPage from './pages/ContentDetailPage';
+import AdminTestPage from './pages/AdminTestPage';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -29,8 +33,11 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/community" element={<CommunityPage />} />
           <Route path="/contact" element={<ContactPage />} />
-
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/legal" element={<LegalPage searchQuery={searchQuery} />} />
+          <Route path="/contents" element={<ContentsPage />} />
+          <Route path="/contents/:id" element={<ContentDetailPage />} />
+          <Route path="/admin/test" element={<AdminTestPage />} />
         </Routes>
       </main>
       <Footer />

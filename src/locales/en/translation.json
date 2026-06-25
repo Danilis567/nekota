@@ -1,0 +1,350 @@
+{
+  "navbar": {
+    "what_is_nekota": "What is Nekota?",
+    "dropdown": {
+      "who_are_we": "Who are We?",
+      "mission_vision": "Mission and Vision",
+      "roadmap": "Roadmap"
+    },
+    "blog": "Blog",
+    "discover": "Discover",
+    "contents": "Contents",
+    "home": "Home",
+    "contact_us": "Contact Us"
+  },
+  "landing": {
+    "hero": {
+      "title_start": "Turkey's",
+      "title_highlight": "Independent Artists",
+      "title_end": "Your Digital Gateway.",
+      "description": "We are developing a new generation mobile platform that supports Turkey's independent artists and brings their works to readers. Join our email list to be among the first to know.",
+      "email_placeholder": "Your email address...",
+      "button": "BE INFORMED"
+    },
+    "features": {
+      "subtitle": "What Does Nekota Offer?",
+      "description": "We are building an ecosystem where art and technology meet, growing with the power of the community.",
+      "items": {
+        "support": {
+          "title": "Independent Artist Support",
+          "description": "A platform that protects the labor of local talents, secures copyrights, and brings their works to a wide audience."
+        },
+        "revenue": {
+          "title": "Fair Revenue Model",
+          "description": "A sustainable earning system that ensures artists receive a transparent and fair share of the income from their works."
+        },
+        "reading": {
+          "title": "Immersive Reading Experience",
+          "description": "Ad-free subscription options that let you focus on the story and a smart recommendation engine that works according to your reading habits."
+        },
+        "community": {
+          "title": "Live and Interactive Community",
+          "description": "An ecosystem where you can communicate directly with other readers and artists through comments, forums, and our Discord server."
+        },
+        "library": {
+          "title": "Wide Content Library",
+          "description": "A rich content archive consisting of both local independent comics and webtoons, and unforgettable classic manga and anime."
+        },
+        "user_centric": {
+          "title": "User-Centric Development",
+          "description": "A transparent development process that grows with continuous feedback, shaped according to your needs, and where the community has a say."
+        }
+      }
+    },
+    "ecosystem": {
+      "title": "Building an Ecosystem Together.",
+      "description": "We noticed that talented independent comic and webtoon artists in Turkey do not receive the value they deserve. We established Nekota as a new generation digital publishing platform that puts artists at the center. Our goal is to create a sustainable ecosystem where artists can get rewarded for their efforts and readers discover new worlds.",
+      "button": "Join the Community"
+    },
+    "news": {
+      "title": "News from the Nekota Universe",
+      "description": "Latest developments, collaborations, and our community announcements. On this blog, you can find all the stories about the birth of a project.",
+      "button": "GO TO ALL BLOG",
+      "read_post": "Read Post",
+      "category_general": "GENERAL"
+    },
+    "cta": {
+      "title": "Join Nekota!",
+      "description": "Join our email list to stay informed about all developments from the launch of our application to artist announcements and new content.",
+      "email_placeholder": "Enter your email address",
+      "button": "JOIN"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Who are We?",
+      "description": "We are a new generation publisher, a passionate group of developers, designers, and storytellers who believe in the power of independent art. We came together to create the platform we always wanted to see: an area where Turkey's artists can develop and readers can discover unique worlds."
+    },
+    "details": {
+      "subtitle": "NEKOTA",
+      "title": "Established by Artists, for Artists.",
+      "description": "We noticed that talented independent comic and webtoon artists in Turkey do not receive the value they deserve. We established Nekota as a new generation digital publishing platform that puts artists at the center.\n\nOur goal is to create a sustainable ecosystem where artists can get rewarded for their efforts, copyrights are protected, and readers discover new worlds. We believe every line, every story has a value and we work to bring this value to the audience it deserves."
+    }
+  },
+  "mission": {
+    "hero": {
+      "title": "Mission and Vision",
+      "description": "We set out with the goal of creating a technology-enhanced, fair, and sustainable digital publishing ecosystem that puts art and artists at the center."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our core mission is to empower independent artists and storytellers in Turkey. We aim to provide them with a modern platform where they can deliver their works to wide audiences with a fair revenue model, protect their copyrights, and use their creative freedom to the fullest. For readers, we aim to create an area where they can easily access rich and diverse content produced by local talents and become part of a live community."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Our vision is to make Nekota the heart of Turkey's independent digital comic and webtoon scene. We dream of being not just a reading platform, but also a cultural center where artists and readers come together, interact, and grow together. In the long term, we aim to be a recognized and respected brand that represents original stories and artists from Turkey in the international arena."
+    }
+  },
+  "roadmap": {
+    "hero": {
+      "title": "Roadmap",
+      "description": "We are developing Nekota with a transparent and community-focused process. Here is an overview of what awaits us in the future."
+    },
+    "phases": [
+      {
+        "phase": "Phase 1: Beta Testing and Launch (2026 Q3)",
+        "title": "Beta Process and Official Launch",
+        "description": "Commencement of beta testing and official launch of the application before the end of Q3."
+      },
+      {
+        "phase": "Phase 2: iOS and macOS Release (2026 Q4)",
+        "title": "Apple Ecosystem Expansion",
+        "description": "iOS and macOS versions reaching users and making the platform accessible on all Apple devices."
+      },
+      {
+        "phase": "Phase 3: Incorporation and Growth (2027 Q2)",
+        "title": "Institutionalization and 100,000 Users",
+        "description": "Completion of the incorporation process, making the revenue distribution system faster and more efficient, and reaching the target of 100,000 active users."
+      },
+      {
+        "phase": "Phase 4: Translation and Dubbing Support",
+        "title": "Localization Fund",
+        "description": "Creation of a special fund to support Turkish translation and dubbing teams and increasing the quality of content."
+      },
+      {
+        "phase": "Phase 5: Original Content and Studio Support (2028 Q1)",
+        "title": "Nekota Originals and Amateur Studios",
+        "description": "Supporting amateur studios for Nekota original content through financial and equipment aid, funding, or hiring as employees; supporting the production of small studios and protecting copyrights."
+      },
+      {
+        "phase": "Phase 6: Regional Expansion (2028 Q4 - 2029 Q1)",
+        "title": "Nearby Geography Operations",
+        "description": "Expanding to nearby geographical regions, starting with Cyprus and Azerbaijan."
+      },
+      {
+        "phase": "Phase 7: Global Market Entry (2030 and Beyond)",
+        "title": "Global Vision",
+        "description": "Expanding into European and North American markets to make the platform a global brand."
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "description": "Latest news from the Nekota universe, artist interviews, technical articles, and community stories."
+    },
+    "search_placeholder": "Search in blog...",
+    "all_categories": "All Categories",
+    "author": "Author",
+    "post_not_found": "Post not found.",
+    "categories": {
+      "all": "All",
+      "announcement": "ANNOUNCEMENT",
+      "artist": "ARTIST",
+      "technology": "TECHNOLOGY",
+      "community": "COMMUNITY",
+      "culture": "CULTURE",
+      "development": "DEVELOPMENT"
+    },
+    "card": {
+      "category_general": "GENERAL",
+      "author": "Author"
+    },
+    "no_posts": "No posts found matching your criteria."
+  },
+  "community": {
+    "hero": {
+      "title": "Our Community",
+      "description": "Connect with artists and other readers, join discussions, and become part of the Nekota universe."
+    },
+    "details": {
+      "title": "Join the Heart of the Community",
+      "description": "Join discussions, chat directly with your favorite artists, be the first to access exclusive content, and have a say in decisions that shape the future of Nekota. This is not just a platform, but a family where we share a common passion.",
+      "button": "Join Our Discord Server"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "Do you have a question, an idea, or just want to say hello? We would love to hear from you."
+    },
+    "info": {
+      "general": {
+        "title": "General Questions",
+        "description": "For all your questions about the platform, subscriptions, or general topics."
+      },
+      "partnership": {
+        "title": "Business Partnerships",
+        "description": "Collaboration opportunities for publishers, brands, and potential partners."
+      },
+      "media": {
+        "title": "Press and Media",
+        "description": "For interview requests, press releases, and all communications related to the media."
+      }
+    },
+    "form": {
+      "title": "Write to Us",
+      "subtitle": "We look forward to hearing from you.",
+      "name_label": "Your Name",
+      "email_label": "Your Email Address",
+      "message_label": "Your Message",
+      "button_send": "Send Message",
+      "button_sending": "Sending...",
+      "success_message": "Your message has been sent successfully! We will get back to you soon.",
+      "error_message": "Failed to send message. Please try again."
+    },
+    "community_card": {
+      "title": "Join the Community",
+      "description": "Over 5,000 artists are waiting for you on our Discord server."
+    }
+  },
+  "legal": {
+    "hero": {
+      "title": "Terms and Conditions",
+      "description": "All details about the rights, responsibilities, and policies that come with being an artist or user on the Nekota platform."
+    },
+    "main_title": "Nekota Creator and User Agreement",
+    "main_description": "This document contains general rules, policies, and legal obligations applicable to all parties (Artists, Users, Business Partners) related to the use of the Nekota platform.",
+    "search": {
+      "results_for": "{{count}} results found for \"{{query}}\":",
+      "no_results": "No results found for \"{{query}}\".",
+      "placeholder": "Search in documents..."
+    },
+    "menu": {
+      "artist": {
+        "main": "For Artists",
+        "general_terms": "General Terms",
+        "revenue_models": "Revenue Models",
+        "legal_procedures": "Legal Procedures",
+        "items": {
+          "parties": "Parties and Subject",
+          "licensing": "Licensing and Duration",
+          "intellectual_property": "Intellectual Property",
+          "responsibilities": "Responsibilities of Parties",
+          "termination": "Termination and Confidentiality",
+          "basic_revenue": "Basic Revenues",
+          "youtube": "YouTube Promotion",
+          "tiered_subscription": "Tiered Subscription Model",
+          "crowdfunding": "Crowdfunding Model",
+          "force_majeure": "Force Majeure",
+          "dispute_resolution": "Dispute Resolution",
+          "entire_agreement": "Entirety of Agreement"
+        }
+      },
+      "user": {
+        "main": "For Users",
+        "subscription_payments": "Subscription and Payments",
+        "special_privileges": "Special Privileges",
+        "items": {
+          "packages": "Platform Subscription Packages",
+          "billing": "Payment and Billing",
+          "cancellation": "Cancellation and Refund Policy",
+          "patreon": "Patreon Privileges"
+        }
+      },
+      "guides": {
+        "main": "Platform Guides",
+        "account_management": "Account Management",
+        "content_management": "Content Management for Artists",
+        "reading_experience": "Reading Experience for Readers",
+        "items": {
+          "profile": "Profile Creation and Editing",
+          "notifications": "Notification Settings",
+          "security": "Security and Password Operations",
+          "upload": "Content Upload Standards",
+          "scheduling": "Sectioning and Scheduling",
+          "artist_panel": "Artist Panel Usage",
+          "library": "How to Use Library?",
+          "offline": "Offline Reading Feature",
+          "discovery": "Content Discovery and Filtering"
+        }
+      },
+      "community": {
+        "main": "Community and Interaction Rules",
+        "etiquette": "Comment and Discussion Etiquette",
+        "moderation": "Moderation Process",
+        "discord_forum": "Discord and Forum Rules",
+        "items": {
+          "criticism": "How to Give Constructive Criticism?",
+          "spoiler": "Spoiler Policy",
+          "reporting": "How to Report Content?",
+          "appeals": "Appeal and Evaluation Processes",
+          "channels": "Channel Usage Purposes",
+          "events": "Event and Contest Participation Terms"
+        }
+      },
+      "technical": {
+        "main": "Technical Details",
+        "technologies": "Technologies We Use",
+        "feedback": "Feedback and Bug Reporting",
+        "open_source": "Open Source Contributions",
+        "items": {
+          "flutter_firebase": "Why Flutter and Firebase?",
+          "infrastructure": "Security of Our Infrastructure",
+          "feature_request": "How to Make a New Feature Request?",
+          "bug_reporting": "Bug Reporting Process",
+          "contributing": "How You Can Contribute to the Project?",
+          "contributors": "List of Contributors"
+        }
+      },
+      "partnership": {
+        "main": "Partnerships and Press",
+        "models": "Collaboration Models",
+        "press_kit": "Press Kit",
+        "advertising": "Advertising Options",
+        "items": {
+          "opportunities": "Opportunities for Publishers and Brands",
+          "materials": "Logos and Visual Materials",
+          "about_press": "About Us Text and Contact",
+          "how_to_advertise": "How to Advertise on the Platform?"
+        }
+      }
+    }
+  },
+  "footer": {
+    "subscription_text": "Subscribe to our newsletter to stay informed about developments.",
+    "email_placeholder": "Your email address...",
+    "subscribe_button": "Submit",
+    "loading_button": "...",
+    "message_empty_email": "Please enter an email address.",
+    "message_success": "You have successfully subscribed! Stay tuned for updates.",
+    "columns": {
+      "about": {
+        "title": "About Us",
+        "links": {
+          "who_are_we": "Who are We?",
+          "mission_vision": "Mission and Vision",
+          "roadmap": "Roadmap",
+          "contact": "Contact"
+        }
+      },
+      "contact": {
+        "title": "Contact"
+      },
+      "community": {
+        "title": "Community",
+        "links": {
+          "patreon": "Patreon",
+          "x_twitter": "X (Twitter)",
+          "discord": "Discord",
+          "reddit": "Reddit"
+        }
+      }
+    }
+  },
+  "contents": {
+    "title": "Contents",
+    "description": "You can access detailed summaries and planning stages of all projects developed on the Nekota platform here.",
+    "review_button": "Review"
+  }
+}

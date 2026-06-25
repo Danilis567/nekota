@@ -1,183 +1,19 @@
-// src/pages/LegalPage.jsx
-
-import React, { useRef, useState, useEffect, searchQuery } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { FiChevronDown } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import Content from './content';
 
-// Tüm sözleşme içeriğini ve menü yapısını tek bir veri objesinde topladık
-const legalData = [
-    {
-        mainCategory: 'Sanatçılar için',
-        accordions: [
-            {
-                category: 'Genel Şartlar',
-                items: [
-                    { id: 'madde-1-2', title: 'Taraflar ve Konu' },
-                    { id: 'madde-3', title: 'Lisanslama ve Süre' },
-                    { id: 'madde-6', title: 'Fikri Mülkiyet' },
-                    { id: 'madde-7', title: 'Tarafların Sorumlulukları' },
-                    { id: 'madde-8-9', title: 'Fesih ve Gizlilik' },
-                ]
-            },
-            {
-                category: 'Gelir Modelleri',
-                items: [
-                    { id: 'madde-4', title: 'Temel Gelirler' },
-                    { id: 'madde-5', title: 'YouTube Promosyonu' },
-                    { id: 'madde-y', title: 'Katmanlı Abonelik Modeli' },
-                    { id: 'madde-z', title: 'Kitle Fonlaması Modeli' },
-                ]
-            },
-            {
-                category: 'Yasal Prosedürler',
-                items: [
-                    { id: 'madde-10', title: 'Mücbir Sebepler' },
-                    { id: 'madde-11', title: 'Uyuşmazlıkların Çözümü' },
-                    { id: 'madde-12', title: 'Anlaşmanın Bütünlüğü' },
-                ]
-            }
-        ]
-    },
-    {
-        mainCategory: 'Kullanıcılar için',
-        accordions: [
-            {
-                category: 'Abonelik ve Ödemeler',
-                items: [
-                    { id: 'kullanici-abonelik-paketleri', title: 'Platform Abonelik Paketleri' },
-                    { id: 'kullanici-odeme-ve-faturalandirma', title: 'Ödeme ve Faturalandırma' },
-                    { id: 'kullanici-iptal-ve-iade', title: 'İptal ve İade Politikası' },
-                ]
-            },
-            {
-                category: 'Özel Ayrıcalıklar',
-                items: [
-                    { id: 'kullanici-patreon-entegrasyonu', title: 'Patreon Ayrıcalıkları' },
-                ]
-            }
-        ]
-    },
-    {
-        mainCategory: 'Platform Rehberleri',
-        accordions: [
-            {
-                category: 'Hesap Yönetimi',
-                items: [
-                    { id: 'rehber-profil-olusturma', title: 'Profil Oluşturma ve Düzenleme' },
-                    { id: 'rehber-bildirim-ayarlari', title: 'Bildirim Ayarları' },
-                    { id: 'rehber-guvenlik-ve-sifre', title: 'Güvenlik ve Şifre İşlemleri' },
-                ]
-            },
-            {
-                category: 'Sanatçılar için İçerik Yönetimi',
-                items: [
-                    { id: 'rehber-eser-yukleme', title: 'Eser Yükleme Standartları' },
-                    { id: 'rehber-bolumleme-zamanlama', title: 'Bölümleme ve Zamanlama' },
-                    { id: 'rehber-sanatci-paneli', title: 'Sanatçı Paneli Kullanımı' },
-                ]
-            },
-            {
-                category: 'Okurlar için Okuma Deneyimi',
-                items: [
-                    { id: 'rehber-kutuphane-kullanimi', title: 'Kütüphane Nasıl Kullanılır?' },
-                    { id: 'rehber-cevrimdisi-okuma', title: 'Çevrimdışı Okuma Özelliği' },
-                    { id: 'rehber-icerik-kesfetme', title: 'İçerik Keşfetme ve Filtreleme' },
-                ]
-            }
-        ]
-    },
-    {
-        mainCategory: 'Topluluk ve Etkileşim Kuralları',
-        accordions: [
-            {
-                category: 'Yorum ve Tartışma Adabı',
-                items: [
-                    { id: 'topluluk-yapici-elestiri', title: 'Yapıcı Eleştiri Nasıl Yapılır?' },
-                    { id: 'topluluk-spoiler-politikasi', title: 'Spoiler Politikası' },
-                ]
-            },
-            {
-                category: 'Moderasyon Süreci',
-                items: [
-                    { id: 'topluluk-icerik-raporlama', title: 'İçerik Nasıl Rapor Edilir?' },
-                    { id: 'topluluk-itiraz-surecleri', title: 'İtiraz ve Değerlendirme Süreçleri' },
-                ]
-            },
-            {
-                category: 'Discord ve Forum Kuralları',
-                items: [
-                    { id: 'topluluk-kanal-kullanimi', title: 'Kanal Kullanım Amaçları' },
-                    { id: 'topluluk-etkinlik-sartlari', title: 'Etkinlik ve Yarışma Katılım Şartları' },
-                ]
-            }
-        ]
-    },
-    {
-        mainCategory: 'Teknik Detaylar',
-        accordions: [
-            {
-                category: 'Kullandığımız Teknolojiler',
-                items: [
-                    { id: 'teknik-flutter-firebase', title: 'Neden Flutter ve Firebase?' },
-                    { id: 'teknik-altyapi-guvenligi', title: 'Altyapımızın Güvenliği' },
-                ]
-            },
-            {
-                category: 'Geri Bildirim ve Hata Raporlama',
-                items: [
-                    { id: 'teknik-ozellik-talebi', title: 'Yeni Özellik Talebi Nasıl Yapılır?' },
-                    { id: 'teknik-hata-bildirme', title: 'Hata (Bug) Bildirme Süreci' },
-                ]
-            },
-            {
-                category: 'Açık Kaynak Katkıları',
-                items: [
-                    { id: 'teknik-katkida-bulunma', title: 'Projeye Nasıl Katkıda Bulunabilirsiniz?' },
-                    { id: 'teknik-katkida-bulunanlar', title: 'Katkıda Bulunanlar Listesi' },
-                ]
-            }
-        ]
-    },
-    {
-        mainCategory: 'İş Ortaklıkları ve Basın',
-        accordions: [
-            {
-                category: 'İş Birliği Modelleri',
-                items: [
-                    { id: 'ortaklik-yayinci-marka', title: 'Yayıncılar ve Markalar için Fırsatlar' },
-                ]
-            },
-            {
-                category: 'Basın Kiti',
-                items: [
-                    { id: 'basin-logo-materyal', title: 'Logolar ve Görsel Materyaller' },
-                    { id: 'basin-hakkimizda', title: 'Hakkımızda Yazısı ve İletişim' },
-                ]
-            },
-            {
-                category: 'Reklam Seçenekleri',
-                items: [
-                    { id: 'reklam-nasil-verilir', title: 'Platformda Nasıl Reklam Verilir?' },
-                ]
-            }
-        ]
-    }
-];
-
-// Tek bir metin bölümünü oluşturan bileşen
-
-
 // Sol menüdeki açılır/kapanır ana kategori bileşeni
-const MainAccordion = ({ category, accordions, openMainCategory, setOpenMainCategory }) => {
-    const isOpen = openMainCategory === category;
+const MainAccordion = ({ category, categoryId, accordions, openMainCategory, setOpenMainCategory }) => {
+    const isOpen = openMainCategory === categoryId;
 
     return (
         <div className="py-2">
             <button
-                onClick={() => setOpenMainCategory(isOpen ? null : category)}
+                onClick={() => setOpenMainCategory(isOpen ? null : categoryId)}
                 className="flex w-full items-center text-start justify-between text-xl font-bold text-white transition-colors hover:text-[#FFA800]"
             >
-                <span>{category}</span>
+                <span className="pr-2">{category}</span>
                 <span className={`transform transition-transform duration-200 ${isOpen ? 'rotate-0' : '-rotate-90'}`}>
                     <FiChevronDown />
                 </span>
@@ -205,11 +41,178 @@ const MainAccordion = ({ category, accordions, openMainCategory, setOpenMainCate
 };
 
 
-export default function LegalPage() {
-    const [openMainCategory, setOpenMainCategory] = useState('Sanatçılar için'); // İlk ana kategori başlangıçta açık olsun
+export default function LegalPage({ searchQuery }) {
+    const { t } = useTranslation();
+    const [openMainCategory, setOpenMainCategory] = useState('artist'); 
     const [searchResults, setSearchResults] = useState([]);
     const [hasSearched, setHasSearched] = useState(false);
     const contentRef = useRef(null);
+
+    // Tüm sözleşme içeriğini ve menü yapısını tek bir veri objesinde topladık
+    const legalData = [
+        {
+            id: 'artist',
+            mainCategory: t('legal.menu.artist.main'),
+            accordions: [
+                {
+                    category: t('legal.menu.artist.general_terms'),
+                    items: [
+                        { id: 'madde-1-2', title: t('legal.menu.artist.items.parties') },
+                        { id: 'madde-3', title: t('legal.menu.artist.items.licensing') },
+                        { id: 'madde-6', title: t('legal.menu.artist.items.intellectual_property') },
+                        { id: 'madde-7', title: t('legal.menu.artist.items.responsibilities') },
+                        { id: 'madde-8-9', title: t('legal.menu.artist.items.termination') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.artist.revenue_models'),
+                    items: [
+                        { id: 'madde-4', title: t('legal.menu.artist.items.basic_revenue') },
+                        { id: 'madde-5', title: t('legal.menu.artist.items.youtube') },
+                        { id: 'madde-y', title: t('legal.menu.artist.items.tiered_subscription') },
+                        { id: 'madde-z', title: t('legal.menu.artist.items.crowdfunding') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.artist.legal_procedures'),
+                    items: [
+                        { id: 'madde-10', title: t('legal.menu.artist.items.force_majeure') },
+                        { id: 'madde-11', title: t('legal.menu.artist.items.dispute_resolution') },
+                        { id: 'madde-12', title: t('legal.menu.artist.items.entire_agreement') },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'user',
+            mainCategory: t('legal.menu.user.main'),
+            accordions: [
+                {
+                    category: t('legal.menu.user.subscription_payments'),
+                    items: [
+                        { id: 'kullanici-abonelik-paketleri', title: t('legal.menu.user.items.packages') },
+                        { id: 'kullanici-odeme-ve-faturalandirma', title: t('legal.menu.user.items.billing') },
+                        { id: 'kullanici-iptal-ve-iade', title: t('legal.menu.user.items.cancellation') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.user.special_privileges'),
+                    items: [
+                        { id: 'kullanici-patreon-entegrasyonu', title: t('legal.menu.user.items.patreon') },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'guides',
+            mainCategory: t('legal.menu.guides.main'),
+            accordions: [
+                {
+                    category: t('legal.menu.guides.account_management'),
+                    items: [
+                        { id: 'rehber-profil-olusturma', title: t('legal.menu.guides.items.profile') },
+                        { id: 'rehber-bildirim-ayarlari', title: t('legal.menu.guides.items.notifications') },
+                        { id: 'rehber-guvenlik-ve-sifre', title: t('legal.menu.guides.items.security') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.guides.content_management'),
+                    items: [
+                        { id: 'rehber-eser-yukleme', title: t('legal.menu.guides.items.upload') },
+                        { id: 'rehber-bolumleme-zamanlama', title: t('legal.menu.guides.items.scheduling') },
+                        { id: 'rehber-sanatci-paneli', title: t('legal.menu.guides.items.artist_panel') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.guides.reading_experience'),
+                    items: [
+                        { id: 'rehber-kutuphane-kullanimi', title: t('legal.menu.guides.items.library') },
+                        { id: 'rehber-cevrimdisi-okuma', title: t('legal.menu.guides.items.offline') },
+                        { id: 'rehber-icerik-kesfetme', title: t('legal.menu.guides.items.discovery') },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'community',
+            mainCategory: t('legal.menu.community.main'),
+            accordions: [
+                {
+                    category: t('legal.menu.community.etiquette'),
+                    items: [
+                        { id: 'topluluk-yapici-elestiri', title: t('legal.menu.community.items.criticism') },
+                        { id: 'topluluk-spoiler-politikasi', title: t('legal.menu.community.items.spoiler') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.community.moderation'),
+                    items: [
+                        { id: 'topluluk-icerik-raporlama', title: t('legal.menu.community.items.reporting') },
+                        { id: 'topluluk-itiraz-surecleri', title: t('legal.menu.community.items.appeals') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.community.discord_forum'),
+                    items: [
+                        { id: 'topluluk-kanal-kullanimi', title: t('legal.menu.community.items.channels') },
+                        { id: 'topluluk-etkinlik-sartlari', title: t('legal.menu.community.items.events') },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'technical',
+            mainCategory: t('legal.menu.technical.main'),
+            accordions: [
+                {
+                    category: t('legal.menu.technical.technologies'),
+                    items: [
+                        { id: 'teknik-flutter-firebase', title: t('legal.menu.technical.items.flutter_firebase') },
+                        { id: 'teknik-altyapi-guvenligi', title: t('legal.menu.technical.items.infrastructure') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.technical.feedback'),
+                    items: [
+                        { id: 'teknik-ozellik-talebi', title: t('legal.menu.technical.items.feature_request') },
+                        { id: 'teknik-hata-bildirme', title: t('legal.menu.technical.items.bug_reporting') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.technical.open_source'),
+                    items: [
+                        { id: 'teknik-katkida-bulunma', title: t('legal.menu.technical.items.contributing') },
+                        { id: 'teknik-katkida-bulunanlar', title: t('legal.menu.technical.items.contributors') },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'partnership',
+            mainCategory: t('legal.menu.partnership.main'),
+            accordions: [
+                {
+                    category: t('legal.menu.partnership.models'),
+                    items: [
+                        { id: 'ortaklik-yayinci-marka', title: t('legal.menu.partnership.items.opportunities') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.partnership.press_kit'),
+                    items: [
+                        { id: 'basin-logo-materyal', title: t('legal.menu.partnership.items.materials') },
+                        { id: 'basin-hakkimizda', title: t('legal.menu.partnership.items.about_press') },
+                    ]
+                },
+                {
+                    category: t('legal.menu.partnership.advertising'),
+                    items: [
+                        { id: 'reklam-nasil-verilir', title: t('legal.menu.partnership.items.how_to_advertise') },
+                    ]
+                }
+            ]
+        }
+    ];
 
     const performSearch = () => {
         if (!searchQuery || searchQuery.trim() === '') {
@@ -260,13 +263,13 @@ export default function LegalPage() {
     }, [searchQuery]);
 
     // Arama sonuçlarını gösteren bileşen
-    const SearchResults = () => {
+    const SearchResultsComponent = () => {
         if (!hasSearched) return null;
 
         if (searchResults.length === 0) {
             return (
                 <div className="mb-8 p-4 bg-white/5 rounded-lg">
-                    <p className="text-white/70">"{searchQuery}" için hiç sonuç bulunamadı.</p>
+                    <p className="text-white/70">{t('legal.search.no_results', { query: searchQuery })}</p>
                 </div>
             );
         }
@@ -274,7 +277,7 @@ export default function LegalPage() {
         return (
             <div className="mb-8 p-4 bg-white/5 rounded-lg">
                 <h3 className="text-xl font-semibold text-white mb-4">
-                    "{searchQuery}" için {searchResults.length} sonuç bulundu:
+                    {t('legal.search.results_for', { query: searchQuery, count: searchResults.length })}
                 </h3>
                 <div className="space-y-2">
                     {searchResults.map((result, index) => (
@@ -298,28 +301,30 @@ export default function LegalPage() {
             </div>
         );
     };
+
     return (
         <div className="bg-[#111111] font-['Poppins'] text-white">
             <section className="relative border-b border-white/10 py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                            Şartlar ve Koşullar
+                            {t('legal.hero.title')}
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-white/70">
-                            Nekota platformunda bir sanatçı veya kullanıcı olmanın getirdiği haklar, sorumluluklar ve politikalar hakkında tüm detaylar.
+                            {t('legal.hero.description')}
                         </p>
                     </div>
                 </div>
             </section>
 
             <div className="mx-auto flex max-w-7xl px-6 py-16 lg:px-8">
-                <aside className="sticky top-28 hidden h-[calc(100vh-8rem)] w-72 shrink-0 pr-8 lg:block">
+                <aside className="sticky top-28 hidden h-[calc(100vh-8rem)] w-72 shrink-0 overflow-y-auto pr-4 lg:block custom-sidebar-scroll">
                     <nav className="flex flex-col divide-y divide-white/10">
                         {legalData.map((main) => (
                             <MainAccordion
-                                key={main.mainCategory}
+                                key={main.id}
                                 category={main.mainCategory}
+                                categoryId={main.id}
                                 accordions={main.accordions}
                                 openMainCategory={openMainCategory}
                                 setOpenMainCategory={setOpenMainCategory}
@@ -328,17 +333,33 @@ export default function LegalPage() {
                     </nav>
                 </aside>
 
-                <main className="w-full lg:pl-8">
+                <main className="w-full lg:pl-8" ref={contentRef}>
+                    <SearchResultsComponent />
                     <div className="mb-16">
-                        <h2 className="text-4xl font-bold text-white">Nekota İçerik Üreticisi ve Kullanıcı Anlaşması</h2>
-                        <p className="mt-4 text-lg text-white/70">Bu belge, Nekota platformunun kullanımıyla ilgili tüm taraflar (Sanatçılar, Kullanıcılar, İş Ortakları) için geçerli olan genel kuralları, politikaları ve yasal yükümlülükleri içerir.</p>
+                        <h2 className="text-4xl font-bold text-white">{t('legal.main_title')}</h2>
+                        <p className="mt-4 text-lg text-white/70">{t('legal.main_description')}</p>
                     </div>
 
                     <Content />
 
-
                 </main>
             </div>
+
+            <style>{`
+                .custom-sidebar-scroll::-webkit-scrollbar {
+                    width: 4px;
+                }
+                .custom-sidebar-scroll::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+                .custom-sidebar-scroll::-webkit-scrollbar-thumb {
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 10px;
+                }
+                .custom-sidebar-scroll::-webkit-scrollbar-thumb:hover {
+                    background: rgba(255, 168, 0, 0.3);
+                }
+            `}</style>
         </div>
     );
 }
